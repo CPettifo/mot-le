@@ -626,11 +626,7 @@ mieux
 moins
 point
 reste
-in de
 total
-vu de
--delà
--deçà
 bades
 baine
 bains
@@ -699,7 +695,6 @@ réola
 réole
 réolé
 spice
-ssi c
 stral
 stère
 teure
@@ -960,7 +955,6 @@ bayés
 bazar
 bazou
 beach
-be xe
 bepré
 betés
 beche
@@ -1486,8 +1480,6 @@ bûché
 bûmes
 bûtes
 bœufs
-c'tte
-c-à-d
 caban
 cabas
 cabos
@@ -1713,7 +1705,6 @@ cesus
 cessé
 ceste
 cette
-ch'ti
 chacx
 chahs
 chair
@@ -2221,7 +2212,6 @@ cuita
 cuite
 cuits
 cuité
-cul c
 culai
 culas
 culer
@@ -2308,7 +2298,6 @@ cônes
 côtes
 côtés
 cœurs
-d'tre
 dadas
 dagua
 dague
@@ -2374,9 +2363,6 @@ dbées
 dphin
 drade
 daïra
-de ba
-de mi
-de un
 deala
 deale
 deals
@@ -2807,8 +2793,6 @@ empli
 empri
 empro
 empès
-en ht
-en or
 encan
 encas
 encen
@@ -2901,7 +2885,6 @@ estes
 estis
 estoc
 estre
-et/ou
 etait
 euros
 eusnt
@@ -4539,7 +4522,6 @@ jutez
 jutât
 jutée
 jutés
-k-sos
 kacha
 kafir
 kafta
@@ -5007,7 +4989,6 @@ lysol
 lysât
 lysée
 lysés
-là-ht
 lâcha
 lâche
 lâché
@@ -5165,8 +5146,6 @@ mgréé
 mvais
 mayas
 maçon
-me rs
-me vx
 megam
 melon
 menai
@@ -5623,7 +5602,6 @@ neufs
 neurx
 neuve
 neveu
-ni vu
 niais
 niair
 niaiz
@@ -5974,8 +5952,6 @@ ozona
 ozone
 ozoni
 ozoné
-p'tet
-p'tit
 pacha
 packs
 pacsa
@@ -6119,7 +6095,6 @@ psais
 psait
 psant
 psass
-p thé
 prais
 prait
 priez
@@ -6262,7 +6237,6 @@ pille
 pillé
 pilon
 pimpé
-pin's
 pinai
 pinas
 pince
@@ -7350,8 +7324,6 @@ rôtir
 rôtis
 rôtit
 rôtît
-s'agi
-s'amu
 sabir
 sabla
 sable
@@ -7672,7 +7644,6 @@ vrera
 vriez
 vrons
 vrées
-x-toy
 xasnt
 xerai
 xeras
@@ -7782,7 +7753,6 @@ slicé
 slips
 sliça
 slows
-sma't
 smala
 smash
 smics
@@ -8029,7 +7999,6 @@ sûmes
 sûres
 sûtes
 sœurs
-s’est
 tabac
 tabas
 tabla
@@ -8168,8 +8137,6 @@ tchat
 tchoc
 tchop
 tchoy
-te rs
-te vx
 tebés
 techa
 tecks
@@ -8661,7 +8628,6 @@ vareu
 varia
 varie
 varié
-vas-y
 vment
 vassx
 vaste
@@ -8958,11 +8924,6 @@ xyste
 xénie
 xénon
 xérès
-y ait
-y eut
-y eût
-y ira
-y vas
 yaaku
 yabem
 yable
@@ -9007,7 +8968,6 @@ yumis
 yuqui
 yuzus
 yèble
-yé-yé
 yélek
 yéleq
 yéléq
@@ -9016,12 +8976,6 @@ yéyés
 yôghi
 yôons
 yōons
-z'ami
-z'oie
-z'oix
-z'yeu
-z-oie
-z-oix
 zabre
 zaine
 zains
@@ -9161,12 +9115,6 @@ zélée
 zélés
 zéros
 zêtas
-à bas
-à cru
-à les
-à pic
-à vif
-à vue
 âcres
 âgées
 âness
@@ -9508,7 +9456,3 @@ zêtas
 œuvra
 œuvre
 œuvré
-1000e
-1ères
-5 à 7
-5-à-7

@@ -27,21 +27,28 @@ f = open("fivers.txt", "w")
 f.write("")
 f.close()
 
+exclusion_characters = ["1", " ", "/", "0", "5", "7", 'ˡ', 'ᵉ', 'ˢ']
+
+
 fiver_counter = 0
 for x in fivers:
-    caps_counter = 0
+    exclude_counter = 0
     for letter in x:
         if letter.isupper():
-            caps_counter += 1
-    if caps_counter == 0:
+            exclude_counter += 1
+        if letter.isalpha() or letter == '\n':
+            exclude_counter += 0
+        elif letter in exclusion_characters:
+            exclude_counter += 1
+            print (x)
+        else:
+            exclude_counter += 1
+    if exclude_counter == 0:
         f = open("fivers.txt", "a")
         f.write(x)
         f.write('\n')
         fiver_counter += 1
         f.close()
-    else:
-        print(caps_counter)
-    caps_counter = 0
 
 print(f"{counter} 5-letter words found from {line_counter}")
 print(f"Your queried word was found this many times in the dictionary: {search_count}")
