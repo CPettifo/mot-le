@@ -1,9 +1,9 @@
-const board = document.querySelector("#board");
 let deAccented = "";
 let accented = "";
-getWord();
+let guessCounter = 0;
+
 drawBoard();
-let turnCounter = 0;
+getWord();
 
 function getWord() {
     // Choose a random number between 0 and 9456, this is the index number of the word chosen
@@ -32,5 +32,26 @@ function getWord() {
 }
 
 function drawBoard() {
-
+    //Select the board div from the HTML
+    const board = document.querySelector("#board");
+    
+    if (board){
+        //Loops through to create the 6 rows
+        for (let i = 0; i < 6; i++) {
+            //Create the row div
+            const row = document.createElement("tr");
+            row.classList.add("row");
+            board.appendChild(row);
+            // now to create the 5 boxes per row
+            for (let j = 0; j < 5; j++) {
+                //create the letterBox div
+                const letterBox = document.createElement("td");
+                letterBox.classList.add("letterBox");
+                letterBox.textContent = "[ ]";
+                row.appendChild(letterBox);
+            }
+        }
+    } else {
+        console.error("Board element not found");
+    }
 }
