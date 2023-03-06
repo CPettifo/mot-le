@@ -27,6 +27,7 @@ function getWord() {
     let accentedContent = accentedRequest.responseText;
     lines = accentedContent.split('\n');
     accented = lines[wordNum];
+    console.log(wordNum);
     console.log(accented, deAccented);
 }
 
