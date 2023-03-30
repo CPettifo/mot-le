@@ -34,6 +34,7 @@ function getWord() {
 function drawBoard() {
     //Select the board div from the HTML
     const board = document.querySelector("#board");
+    word = "motle"
     
     if (board){
         //Loops through to create the 6 rows
@@ -47,8 +48,10 @@ function drawBoard() {
                 //create the letterBox div
                 const letterBox = document.createElement("td");
                 letterBox.classList.add("letterBox");
-                letterBox.textContent = "[ ]";
                 row.appendChild(letterBox);
+                if(i == 0){
+                    letterBox.textContent = word[j];
+                }
             }
         }
     } else {
