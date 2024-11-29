@@ -10,6 +10,9 @@ const Motle = () => {
 
     // PSUEDOCODE
     // Fetch the word from the backend and display the squares
+    // Each box starts as "empty", and is numbered 1 - 5, when the user types a letter in, replace the "empty" with the letter the user entered
+    // Display the entered letter and then move to the next box
+    // backspace will remove the letter and move back one space
     // When the user enters a guess do the following (limited to the number of guesses)
     // Check each letter for a match against the back-end
     // If the user has all letters correct end the game and ask if they want to play again
