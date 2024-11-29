@@ -1,60 +1,50 @@
-let deAccented = "";
-let accented = "";
-let guessCounter = 0;
+import React, { useState, useEffect } from "react";
 
-drawBoard();
-getWord();
+const Motle = () => {
+    const [randomWord, setRandomWord] = useState("");
+    const [unaccentedWord, setUnaccentedWord] = useState("");
+    const [error, setError] = useState(nuill);
 
-function getWord() {
-    // Choose a random number between 0 and 9456, this is the index number of the word chosen
-    let wordNum = Math.floor(Math.random() * 9456);
-    // This opens and sends the contents of un_accented.txt to memory
-    let deAccentedRequest = new XMLHttpRequest();
-    deAccentedRequest.open('GET', 'utilities/un_accented.txt', false);
-    deAccentedRequest.send();
-    //Then it reads through and assigns the variable deAccenated 
-    //with the corresponding string from the un_accented.txt file
-    let deAccentedContent = deAccentedRequest.responseText;
-    let lines = deAccentedContent.split('\n');
-    deAccented = lines[wordNum];
 
-    //The same below for the accenated file fivers.txt
-    let accentedRequest = new XMLHttpRequest();
-    accentedRequest.open('get', 'utilities/fivers.txt', false);
-    accentedRequest.overrideMimeType('text/plain; charset=utf-8');
-    accentedRequest.send();
+    // PSUEDOCODE
+    // Fetch the word from the backend and display the squares
+    // When the user enters a guess do the following (limited to the number of guesses)
+    // Check each letter for a match against the back-end
+    // If the user has all letters correct end the game and ask if they want to play again
+    // Display the squares that the user got right with the appropriate colours
+    // Go to the next row and reduce the number of guesses remaining
 
-    let accentedContent = accentedRequest.responseText;
-    lines = accentedContent.split('\n');
-    accented = lines[wordNum];
-    console.log(wordNum);
-    console.log(accented, deAccented);
-}
+    useEffect(() => {
+        const fetchWord = async () => {
+        try {
+            const response = await fetch(
+                // I don't mind if you find the URI here, it's restricted to read-only
+                "https://superb-bombolone-33f34b.netlify.app/.netlify/functions/fetchRandomWord"
+            );
 
-function drawBoard() {
-    //Select the board div from the HTML
-    const board = document.querySelector("#board");
-    word = "motle"
-    
-    if (board){
-        //Loops through to create the 6 rows
-        for (let i = 0; i < 6; i++) {
-            //Create the row div
-            const row = document.createElement("tr");
-            row.classList.add("row");
-            board.appendChild(row);
-            // now to create the 5 boxes per row
-            for (let j = 0; j < 5; j++) {
-                //create the letterBox div
-                const letterBox = document.createElement("td");
-                letterBox.classList.add("letterBox");
-                row.appendChild(letterBox);
-                if(i == 0){
-                    letterBox.textContent = word[j];
-                }
+            if (!response.ok) {
+                throw new Error("Failed to fetch the word");
             }
+
+            const data = await response.json();
+            setRandomWord(data.mot); 
+            setUnaccentedWord(data.unaccent);
+        } catch (err) {
+            setError(err.message);
         }
-    } else {
-        console.error("Board element not found");
-    }
-}
+        };
+
+        fetchWord();
+    }, []);
+
+    if (error) return <p>{error}</p>;
+
+    return (
+        <div>
+            <p>Word: {randomWord}</p>
+            <p>Unaccented Word: {unaccentedWord}</p>
+        </div>
+    );
+};
+
+export default Motle;
