@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Board from "./Board";
+
 
 const Motle = () => {
     const [randomWord, setRandomWord] = useState("");
@@ -43,6 +45,7 @@ const Motle = () => {
         <div>
             <p>Word: {randomWord}</p>
             <p>Unaccented Word: {unaccentedWord}</p>
+            <Board word={randomWord} />
         </div>
     );
 };
