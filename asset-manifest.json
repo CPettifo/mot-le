@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mot-le/static/css/main.d1b371c7.css",
+    "main.js": "/mot-le/static/js/main.f6d6a48e.js",
+    "static/js/453.3550431f.chunk.js": "/mot-le/static/js/453.3550431f.chunk.js",
+    "index.html": "/mot-le/index.html",
+    "main.d1b371c7.css.map": "/mot-le/static/css/main.d1b371c7.css.map",
+    "main.f6d6a48e.js.map": "/mot-le/static/js/main.f6d6a48e.js.map",
+    "453.3550431f.chunk.js.map": "/mot-le/static/js/453.3550431f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1b371c7.css",
+    "static/js/main.f6d6a48e.js"
+  ]
+}
