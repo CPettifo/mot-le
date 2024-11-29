@@ -1,4 +1,7 @@
-# My take on wordle using French words instead of English.
+# Mot-le
+## Comme Wordle mais en français
+
+This is a 
 
 The first challenge was having accenated words. Included in the utilities folder there are text files with all French Words, all 5-letter French words, and then all 5-letter French words with accents removed. 
 
