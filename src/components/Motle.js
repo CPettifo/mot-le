@@ -5,7 +5,7 @@ import Board from "./Board";
 const Motle = () => {
     const [randomWord, setRandomWord] = useState("");
     const [unaccentedWord, setUnaccentedWord] = useState("");
-    const [error, setError] = useState(nuill);
+    const [error, setError] = useState(null);
 
 
     // PSUEDOCODE
