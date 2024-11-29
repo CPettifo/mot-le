@@ -11,6 +11,10 @@
 # production
 /build
 
+/utilities/dictionary.txt
+/utilities/fivers.txt
+/utilities/un_accented.txt
+
 # misc
 .DS_Store
 .env.local
