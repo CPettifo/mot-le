@@ -1,5 +1,5 @@
 import React from "react";
-import Motle from "./Motle";
+import Motle from "./components/Motle";
 
 const App = () => {
   return (
@@ -8,3 +8,5 @@ const App = () => {
     </div>
   );
 };
+
+export default App;
